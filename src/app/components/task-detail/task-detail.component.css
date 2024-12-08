@@ -1,0 +1,42 @@
+/* Стили для компонента Task Detail */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.details {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.details p {
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.details strong {
+  width: 150px;
+  display: inline-block;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}

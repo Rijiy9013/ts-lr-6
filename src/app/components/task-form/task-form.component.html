@@ -1,0 +1,64 @@
+<div>
+  <h2>{{ isEditMode ? 'Edit Task' : 'Create Task' }}</h2>
+  <form (ngSubmit)="onSubmit()">
+    <!-- Type -->
+    <label>
+      Type:
+      <select [(ngModel)]="task.type" name="type" required>
+        <option value="bug">Bug</option>
+        <option value="task">Task</option>
+      </select>
+    </label>
+    <br/>
+
+    <!-- Priority -->
+    <label>
+      Priority:
+      <select [(ngModel)]="task.priority" name="priority" required>
+        <option value="critical">Critical</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+    </label>
+    <br/>
+
+    <!-- Status -->
+    <label>
+      Status:
+      <input type="text" [(ngModel)]="task.status" name="status" required />
+    </label>
+    <br/>
+
+    <!-- Title -->
+    <label>
+      Title:
+      <input type="text" [(ngModel)]="task.title" name="title" required />
+    </label>
+    <br/>
+
+    <!-- Description -->
+    <label>
+      Description:
+      <textarea [(ngModel)]="task.description" name="description" required></textarea>
+    </label>
+    <br/>
+
+    <!-- Assignee -->
+    <label>
+      Assignee:
+      <input type="text" [(ngModel)]="task.assignee" name="assignee" required />
+    </label>
+    <br/>
+
+    <!-- Creator -->
+    <label>
+      Creator:
+      <input type="text" [(ngModel)]="task.creator" name="creator" required />
+    </label>
+    <br/>
+
+    <!-- Submit Button -->
+    <button type="submit">{{ isEditMode ? 'Update' : 'Create' }} Task</button>
+  </form>
+</div>

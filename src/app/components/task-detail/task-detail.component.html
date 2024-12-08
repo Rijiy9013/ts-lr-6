@@ -1,0 +1,16 @@
+<div *ngIf="task">
+    <h2>Task Details - {{ task.title }}</h2>
+    <p><strong>Number:</strong> {{ task.id }}</p>
+    <p><strong>Type:</strong> {{ task.type }}</p>
+    <p><strong>Priority:</strong> {{ task.priority }}</p>
+    <p><strong>Status:</strong> {{ task.status }}</p>
+    <p><strong>Description:</strong> {{ task.description }}</p>
+    <p><strong>Assignee:</strong> {{ task.assignee }}</p>
+    <p><strong>Creator:</strong> {{ task.creator }}</p>
+    <p><strong>Created At:</strong> {{ task.createdAt | date:'short' }}</p>
+    <p><strong>Updated At:</strong> {{ task.updatedAt | date:'short' }}</p>
+  </div>
+  <div *ngIf="!task">
+    <p>Task not found.</p>
+  </div>
+  
